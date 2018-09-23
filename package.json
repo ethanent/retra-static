@@ -1,0 +1,25 @@
+{
+  "name": "retra-static",
+  "version": "1.0.0",
+  "description": "Serve static files from your retra server, in Node!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanent/retra-static.git"
+  },
+  "keywords": [],
+  "author": "Ethan Davis (https://ethanent.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethanent/retra-static/issues"
+  },
+  "homepage": "https://github.com/ethanent/retra-static",
+  "devDependencies": {
+    "centra": "^2.0.1",
+    "retra": "^1.0.1",
+    "whew": "^1.1.3"
+  }
+}

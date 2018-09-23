@@ -52,7 +52,6 @@ module.exports = (baseDir, indexFile) => {
 					}).end()
 					return
 				}
-				else console.log('Not / ?')
 
 				requestedPath = path.join(filePath, indexFile)
 				requestedExt = path.extname(requestedPath)

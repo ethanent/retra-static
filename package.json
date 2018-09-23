@@ -1,6 +1,6 @@
 {
   "name": "retra-static",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Serve static files from your retra server, in Node!",
   "main": "index.js",
   "scripts": {

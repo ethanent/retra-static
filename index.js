@@ -32,17 +32,7 @@ module.exports = (baseDir, indexFile) => {
 					res.status(304)
 					res.end()
 				} else {
-					fs.readFile(filePath, (err, data) => {
-						if (err) {
-							next()
-						}
-						else {
-							res.status(200).header({
-								'Content-Type': (mimes.hasOwnProperty(requestedExt) ? mimes[requestedExt] : 'application/octet-stream'),
-								'Last-Modified': stats.mtime.toString()
-							}).body(data).end()
-						}
-					})
+					fs.createReadStream(filePath).pipe(res.status(200).coreRes)
 				}
 			}
 			else {
